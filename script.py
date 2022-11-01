@@ -22,3 +22,6 @@ LAST_PAGE = 180
 
 # number of tables in pdf
 QTD_TABLES = LAST_PAGE - FIRST_PAGE + 1
+
+# Read PDF into list of DataFrames
+list_dfs = tb.read_pdf(FILE_NAME_PDF+'.pdf', pages=str(FIRST_PAGE) + '-' + str(LAST_PAGE), lattice=True)
