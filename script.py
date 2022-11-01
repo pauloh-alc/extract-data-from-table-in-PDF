@@ -26,6 +26,9 @@ QTD_TABLES = LAST_PAGE - FIRST_PAGE + 1
 # Read PDF into list of DataFrames
 list_dfs = tb.read_pdf(FILE_NAME_PDF+'.pdf', pages=str(FIRST_PAGE) + '-' + str(LAST_PAGE), lattice=True)
 
+# dictionary to handle subtitles
+dic = {'OD': 'Seg. Odontológica', 'AMB': 'Seg. Ambulatorial'}
+
 # Manipulating the .csv file
 def write_to_csv_file():
     with open('./'+FILE_NAME_CSV+'.csv', 'w') as csvfile:
