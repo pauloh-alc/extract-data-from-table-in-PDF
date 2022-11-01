@@ -15,3 +15,7 @@ import csv
 FILE_NAME_CSV = 'file'
 # pdf file name
 FILE_NAME_PDF = 'anexo1'
+
+# First page of the pdf and last page of the pdf that contains tables.
+FIRST_PAGE = 3
+LAST_PAGE = 180
