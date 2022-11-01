@@ -66,3 +66,9 @@ def write_to_csv_file():
                 row = list(list_dfs[i].iloc[j])                     # selecting line from DataFrame.
                 replace_column_data(row, i, j)                      # replaces the short data in the OD and AMB columns with their descriptions.
                 csv.writer(csvfile, delimiter=',').writerow(row)    # write to csv file
+
+
+# Calling the functions to write data extracted from pdf to csv file e and then zip the file
+write_to_csv_file()
+to_zip_file()
+print('Extração feita com sucesso!!')
