@@ -18,11 +18,13 @@ pip install tabula-py
 
 - Git
 
-Eu tentei fazer os commits deste projeto de uma maneira organizada. Com isso, apliquei o uso de um modelo, para uma melhor mensagem de commit.
+Eu tentei fazer os commits deste projeto de uma maneira organizada. Com isso, apliquei o uso de um modelo, para uma melhor mensagem de commit. Isso acaba valorizando a legibilidade, durante a leitura dos logs dos commits.
 
 Segue o modelo: [estilo-de-commit](https://commit.style/)
 
 - Alguns screenshots de commits 
+
+![Screenshot](img/exemplo-commit-github.png)
 ![Screenshot](img/exemplo-commit-1.png)
 ![Screenshot](img/exemplo-commit-2.png)
 
