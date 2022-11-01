@@ -41,6 +41,12 @@ def replace_column_data(row, i, j):
             if idx != -1:
                 row[idx] = dic[key]
 
+# function: turn to zip
+def to_zip_file():
+    z = zf.ZipFile('Teste_'+FILE_NAME_CSV+'_.zip', 'w', zf.ZIP_DEFLATED)
+    z.write(FILE_NAME_CSV+'.csv')
+    z.close()
+
 
 # Manipulating the .csv file
 def write_to_csv_file():
