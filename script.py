@@ -19,3 +19,6 @@ FILE_NAME_PDF = 'anexo1'
 # First page of the pdf and last page of the pdf that contains tables.
 FIRST_PAGE = 3
 LAST_PAGE = 180
+
+# number of tables in pdf
+QTD_TABLES = LAST_PAGE - FIRST_PAGE + 1
