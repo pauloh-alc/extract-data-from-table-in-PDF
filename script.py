@@ -29,6 +29,19 @@ list_dfs = tb.read_pdf(FILE_NAME_PDF+'.pdf', pages=str(FIRST_PAGE) + '-' + str(L
 # dictionary to handle subtitles
 dic = {'OD': 'Seg. Odontológica', 'AMB': 'Seg. Ambulatorial'}
 
+# function: Replaces the short data in the OD and AMB columns with their descriptions
+def replace_column_data(row, i, j):
+    for key in dic.keys():
+        if key in list_dfs[i].iloc[j]:
+            try:
+                idx = list(list_dfs[i].iloc[j]).index(key)
+            except ValueError:
+                idx = -1;
+
+            if idx != -1:
+                row[idx] = dic[key]
+
+
 # Manipulating the .csv file
 def write_to_csv_file():
     with open('./'+FILE_NAME_CSV+'.csv', 'w') as csvfile:
@@ -45,5 +58,5 @@ def write_to_csv_file():
             for j in range(0,qtd_rows):
                 list_dfs[i].fillna(value='', inplace = True)        # replace nan values with blank values.
                 row = list(list_dfs[i].iloc[j])                     # selecting line from DataFrame.
-                #replace_column_data(row, i, j)                     Replaces the short data in the OD and AMB columns with their descriptions.
-                #csv.writer(csvfile, delimiter=',').writerow(row)   write to csv file
+                replace_column_data(row, i, j)                      # replaces the short data in the OD and AMB columns with their descriptions.
+                csv.writer(csvfile, delimiter=',').writerow(row)    # write to csv file
