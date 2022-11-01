@@ -10,3 +10,8 @@ import csv
     *csv    : the csv library provides functionality to both read from and write to CSV files.
     *zipfile: the ZIP file format is a common archive and compression standar.
 """
+
+# csv file name
+FILE_NAME_CSV = 'file'
+# pdf file name
+FILE_NAME_PDF = 'anexo1'
