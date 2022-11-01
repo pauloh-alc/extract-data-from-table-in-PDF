@@ -2,7 +2,7 @@
 - Extraindo do pdf anexo 1 os dados da tabela Rol de Procedimentos e Eventos em Saúde (todas as páginas);
 - Salvar dados em uma tabela estruturada, em csv;
 - Zipar o csv num arquivo "Teste_{seu_nome}.zip
-- Com a legenda no rodapé substituir os dados abreviados das colunas OD e AMB para as respectivas descrições.
+- Com a legenda no rodapé substituir os dados abreviados das colunas OD e AMB para suas respectivas descrições.
 
 ## Instalação
 
